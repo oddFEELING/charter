@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from 'react';
+import React, { useReducer } from 'react';
 import AppContext from '../context/appContext';
 import reducer from '../context/chartReducer';
 

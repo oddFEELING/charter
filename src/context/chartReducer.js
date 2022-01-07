@@ -5,7 +5,7 @@ export default function reducer(state, action) {
     case 'set_stroke_width':
       return (state = {
         ...state,
-        ['stroke']: {
+        stroke: {
           ...state['stroke'],
           width: action.value,
         },
@@ -15,14 +15,14 @@ export default function reducer(state, action) {
     case 'set_stroke_color':
       return (state = {
         ...state,
-        ['colors']: [action.value],
+        colors: [action.value],
       });
 
     //   set edges
     case 'set_edge_style':
       return (state = {
         ...state,
-        ['stroke']: {
+        stroke: {
           ...state['stroke'],
           curve: action.value,
         },
@@ -32,7 +32,7 @@ export default function reducer(state, action) {
     case 'set_marker_size':
       return (state = {
         ...state,
-        ['markers']: {
+        markers: {
           ...state['markers'],
           size: action.value,
           hover: {

@@ -80,7 +80,7 @@ const Apex = () => {
     actions.setWidth(WidthVal);
     actions.markSize(MarkVal);
     actions.axisTitle(AxisName);
-  }, [WidthVal, MarkVal, AxisName]);
+  }, [WidthVal, MarkVal, AxisName, actions]);
 
   return (
     <S.Container>
